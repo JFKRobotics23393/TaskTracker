@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFK Robotics Project Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>JFK Robotics Project Management</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#programming">Programming</a></li>
+            <li><a href="#manufacturing">Manufacturing</a></li>
+            <li><a href="#design">Design</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="programming">
+            <h2>Programming</h2>
+            <div class="kanban-board">
+                <div class="kanban-column" id="todo-programming">
+                    <h3>To Do</h3>
+                    <div class="kanban-tasks"></div>
+                    <button onclick="addTask('todo-programming')">Add Task</button>
+                </div>
+                <div class="kanban-column" id="inprogress-programming">
+                    <h3>In Progress</h3>
+                    <div class="kanban-tasks"></div>
+                    <button onclick="addTask('inprogress-programming')">Add Task</button>
+                </div>
+                <div class="kanban-column" id="done-programming">
+                    <h3>Done</h3>
+                    <div class="kanban-tasks"></div>
+                    <button onclick="addTask('done-programming')">Add Task</button>
+                </div>
+            </div>
+        </section>
+        <section id="manufacturing">
+            <h2>Manufacturing</h2>
+            <div class="kanban-board">
+                <div class="kanban-column" id="todo-manufacturing">
+                    <h3>To Do</h3>
+                    <div class="kanban-tasks"></div>
+                    <button onclick="addTask('todo-manufacturing')">Add Task</button>
+                </div>
+                <div class="kanban-column" id="inprogress-manufacturing">
+                    <h3>In Progress</h3>
+                    <div class="kanban-tasks"></div>
+                    <button onclick="addTask('inprogress-manufacturing')">Add Task</button>
+                </div>
+                <div class="kanban-column" id="done-manufacturing">
+                    <h3>Done</h3>
+                    <div class="kanban-tasks"></div>
+                    <button onclick="addTask('done-manufacturing')">Add Task</button>
+                </div>
+            </div>
+        </section>
+        <section id="design">
+            <h2>Design</h2>
+            <div class="kanban-board">
+                <div class="kanban-column" id="todo-design">
+                    <h3>To Do</h3>
+                    <div class="kanban-tasks"></div>
+                    <button onclick="addTask('todo-design')">Add Task</button>
+                </div>
+                <div class="kanban-column" id="inprogress-design">
+                    <h3>In Progress</h3>
+                    <div class="kanban-tasks"></div>
+                    <button onclick="addTask('inprogress-design')">Add Task</button>
+                </div>
+                <div class="kanban-column" id="done-design">
+                    <h3>Done</h3>
+                    <div class="kanban-tasks"></div>
+                    <button onclick="addTask('done-design')">Add Task</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 JFK Robotics</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
